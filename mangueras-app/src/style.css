@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  /* COLORES EXTRAÍDOS DE LA GRÁFICA REAL */
+  --color-brand-blue: #0B1B3D;    /* Azul noche premium para fondos oscuros */
+  --color-brand-yellow: #FFC107;  /* Amarillo maquinaria (retroexcavadora) */
+  --color-brand-green: #0A7E65;   /* Verde vibrante de la publicidad */
+  --color-brand-grey: #475569;
+
+  /* Mapeo inteligente para que Tailwind use tu marca */
+  --color-slate-900: var(--color-brand-blue);
+  --color-slate-950: color-mix(in srgb, var(--color-brand-blue) 85%, black);
+
+  --color-yellow-500: var(--color-brand-yellow);
+  --color-yellow-400: color-mix(in srgb, var(--color-brand-yellow) 80%, white);
+  --color-yellow-700: color-mix(in srgb, var(--color-brand-yellow) 70%, black);
+
+  --color-green-600: var(--color-brand-green);
+  --color-green-700: color-mix(in srgb, var(--color-brand-green) 75%, black);
+  --color-green-500: color-mix(in srgb, var(--color-brand-green) 85%, white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-brand-grey);
+}
+
+/* CLASES PARA LA ANIMACIÓN (SCROLL REVEAL) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+/* Ocultar barra de scroll para el carrusel de productos */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* EFECTO NEÓN PARA SELECTORES */
+@keyframes neon-glow {
+  0%, 100% {
+    box-shadow: 0 0 3px rgba(255, 193, 7, 0.2);
+    border-color: rgba(255, 193, 7, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+    border-color: rgba(255, 193, 7, 1);
+  }
+}
+.neon-border {
+  border: 1px solid var(--color-brand-yellow);
+  animation: neon-glow 3s infinite ease-in-out;
+}
+/* Slider Horizontal Automático (5 imágenes) */
+@keyframes slide-horizontal {
+    0%, 15% { transform: translateX(0%); }
+    20%, 35% { transform: translateX(-20%); }
+    40%, 55% { transform: translateX(-40%); }
+    60%, 75% { transform: translateX(-60%); }
+    80%, 95% { transform: translateX(-80%); }
+    100% { transform: translateX(0%); }
+}
+
+.slider-track {
+    display: flex;
+    width: 500%; /* 5 fotos = 500% del contenedor */
+    animation: slide-horizontal 20s infinite cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slider-item {
+    width: 20%; /* Cada foto ocupa el 100% de la vista */
+    flex-shrink: 0;
+}
