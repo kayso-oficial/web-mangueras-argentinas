@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
 
   /* COLORES EXTRAÍDOS DE LA GRÁFICA REAL */
-  --color-brand-blue: #0B1B3D;    /* Azul noche premium para fondos oscuros */
-  --color-brand-yellow: #FFC107;  /* Amarillo maquinaria (retroexcavadora) */
-  --color-brand-green: #0A7E65;   /* Verde vibrante de la publicidad */
+  --color-brand-blue: #0D0F16;    /* Azul noche premium para fondos oscuros */
+  --color-brand-yellow: #BC9F1D;  /* Amarillo maquinaria (retroexcavadora) */
+  --color-brand-green: #03480B;   /* Verde vibrante de la publicidad */
   --color-brand-grey: #475569;
 
   /* Mapeo inteligente para que Tailwind use tu marca */

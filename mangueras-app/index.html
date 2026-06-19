@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -22,7 +20,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Cambio aplicado a Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
@@ -61,19 +60,14 @@
     </script>
 </head>
 <body class="font-sans text-slate-800 bg-slate-50 flex flex-col selection:bg-green-200 overflow-x-hidden">
-
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-<body class="font-sans text-slate-800 bg-slate-50 flex flex-col selection:bg-green-200 overflow-x-hidden">
-
-    
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="/img/logo.png" alt="Mangueras Industriales Logo" class="w-12 h-auto" onerror="this.style.display='none'">
-                <div class="hidden sm:block">
-                    <h1 class="font-bold text-2xl tracking-tighter text-slate-900 leading-none">MANGUERAS</h1>
-                    <h2 class="font-bold text-[9px] tracking-[0.3em] text-slate-500 leading-none mt-1 uppercase">Industriales Argentina</h2>
-                </div>
+<header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <!-- Cambié py-3 por py-1 para achicar la altura (el margen arriba y abajo) -->
+        <div class="max-w-7xl mx-auto px-4 py-0 flex justify-between items-center">
+            
+            <!-- Quité el gap-4 porque ya no hay texto al lado del logo -->
+            <div class="flex items-center">
+                <!-- Cambié w-30 por w-32 (w-30 no existe por defecto en Tailwind, w-32 asegura un tamaño de 128px) -->
+                <img src="/img/mangueras-industriales-argentinas-logo.jpeg" alt="Mangueras Industriales Logo" class="w-32 h-auto" onerror="this.style.display='none'">
             </div>
             
             <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-800 tracking-widest uppercase">
@@ -85,7 +79,6 @@
                 </a>
             </nav>
 
-            <!-- Controles Mobile -->
             <div class="flex md:hidden items-center gap-3">
                 <a href="https://wa.me/5493516252908" target="_blank" class="flex items-center gap-1.5 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-sm transition-colors tracking-widest shadow-md text-[10px] font-bold uppercase">
                     <i data-lucide="phone" class="w-3 h-3"></i> Asesoramiento
@@ -97,7 +90,6 @@
             </div>
         </div>
 
-        <!-- Menú Desplegable Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute top-full w-full left-0 shadow-xl">
             <nav class="flex flex-col p-2 text-sm font-bold text-slate-800 tracking-widest uppercase">
                 <a href="#productos" class="mobile-link p-4 border-b border-slate-100 hover:text-green-600 hover:bg-slate-50 transition-colors">Productos</a>
@@ -115,7 +107,7 @@
     <div class="w-full max-w-7xl mx-auto px-4 relative z-10 flex flex-col items-start text-left">
             
                     
-        <h1 class="reveal delay-100 text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 md:mb-8 leading-[0.9] tracking-tighter uppercase max-w-6xl break-words">
+        <h1 class="reveal delay-100 text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold italic text-white mb-6 md:mb-8 leading-[0.9] tracking-tighter uppercase max-w-6xl break-words">
                 Mangueras <span class="text-yellow-500">Industriales</span> 
             </h1>
             
@@ -582,7 +574,6 @@
 <section id="trabajos-a-medida" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200 overflow-hidden relative">
     <div class="max-w-7xl mx-auto px-4 relative z-10">
         
-        <!-- Título visible solo en Mobile -->
         <div class="reveal text-left mb-8 lg:hidden">
             <h2 class="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-2">Trabajos a Medida</h2>
             <div class="w-16 h-1 bg-yellow-500 mb-2"></div>
@@ -633,7 +624,6 @@
             </div>
 
             <div class="reveal flex flex-col items-start text-left">
-                <!-- Título visible solo en Desktop -->
                 <div class="hidden lg:block w-full">
                     <h2 class="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-2">Trabajos a Medida</h2>
                     <div class="w-16 h-1 bg-yellow-500 mb-8"></div>
@@ -894,11 +884,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
     </svg>
-</a>
+    </a>
 
     <script src="script.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
-</html>
-   <script type="module" src="/src/main.js"></script>
-  </body>
 </html>
