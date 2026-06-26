@@ -8,22 +8,23 @@ createIcons({ icons });
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.15 // Activa cuando el 15% del elemento entra en pantalla
+    threshold: 0.15
 };
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("active");
-            observer.unobserve(entry.target); // Dejar de observar una vez que ya apareció
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-// --- LÓGICA DEL CARRUSEL Y BUSCADOR DE PRODUCTOS ---
+
+// --- LÓGICA DEL CARRUSEL DE CATEGORÍAS Y BUSCADOR ---
 
 // 3. Filtro de Categorías
-function filterProductsInSection(section, category) {
+window.filterProductsInSection = function(section, category) {
     const cards = section.querySelectorAll('.product-card');
     cards.forEach(card => {
         const title = card.getAttribute('data-title').toLowerCase();
@@ -37,7 +38,7 @@ function filterProductsInSection(section, category) {
     });
 }
 
-// 4. LÓGICA DE VER MÁS / VER MENOS EN TARJETAS DE PRODUCTOS (MOBILE)
+// 4. LÓGICA DE VER MÁS / VER MENOS EN TARJETAS (MOBILE)
 document.querySelectorAll('.toggle-details-btn').forEach(btn => {
     btn.addEventListener('click', function() {
         const card = this.closest('.product-card');
@@ -62,11 +63,11 @@ document.querySelectorAll('.toggle-details-btn').forEach(btn => {
 document.querySelectorAll('.category-select').forEach(select => {
     select.addEventListener('change', (e) => {
         const section = e.target.closest('section');
-        filterProductsInSection(section, e.target.value);
+        window.filterProductsInSection(section, e.target.value);
     });
 });
 
-// 5. Movimiento de flechas del Carrusel (Agregado al 'window' para que el HTML lo lea)
+// 5. Movimiento Manual de Flechas del Carrusel Principal (Categorías)
 window.scrollCarousel = function(btn, direction) {
     const section = btn.closest('section');
     const track = section.querySelector('.product-track');
@@ -83,8 +84,6 @@ const mobileMenu = document.getElementById('mobile-menu');
 if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
-        
-        // Cambiar el icono con transición
         const isHidden = mobileMenu.classList.contains('hidden');
         const svgMenu = document.getElementById('icon-menu');
         const svgClose = document.getElementById('icon-close');
@@ -98,7 +97,6 @@ if (mobileMenuBtn && mobileMenu) {
         }
     });
 
-    // Cerrar el menú si se hace click en un enlace
     const mobileLinks = document.querySelectorAll('.mobile-link');
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -107,4 +105,84 @@ if (mobileMenuBtn && mobileMenu) {
             document.getElementById('icon-close').classList.add('opacity-0');
         });
     });
+}
+
+
+// ============================================================
+// 7. CARRUSEL MANUAL DE IMÁGENES INTERNAS (DENTRO DE LA CARD)
+// ============================================================
+window.changeCardImage = function(btn, direction) {
+    const slider = btn.closest('.card-image-slider');
+    const imgs = slider.querySelectorAll('.slide-img');
+    if (imgs.length <= 1) return;
+
+    let currentIndex = Array.from(imgs).findIndex(img => img.classList.contains('opacity-100'));
+    
+    // Ocultar imagen actual
+    imgs[currentIndex].classList.remove('opacity-100');
+    imgs[currentIndex].classList.add('opacity-0');
+    
+    // Calcular siguiente índice
+    currentIndex = (currentIndex + direction + imgs.length) % imgs.length;
+    
+    // Mostrar nueva imagen
+    imgs[currentIndex].classList.remove('opacity-0');
+    imgs[currentIndex].classList.add('opacity-100');
+}
+
+
+// ============================================================
+// 8. GALERÍA DINÁMICA DEL MODAL GLOBAL (CON NAVEGACIÓN)
+// ============================================================
+let modalImages = [];
+let modalCurrentIndex = 0;
+
+window.openProductModal = function(sliderElement) {
+    const imgs = sliderElement.querySelectorAll('.slide-img');
+    if (imgs.length === 0) return;
+
+    // Guardar las rutas y textos de todas las imágenes de esta tarjeta
+    modalImages = Array.from(imgs).map(img => ({ src: img.src, alt: img.alt }));
+    
+    // Detectar cuál es la imagen que se está viendo actualmente en la tarjeta
+    const activeCardIndex = Array.from(imgs).findIndex(img => img.classList.contains('opacity-100'));
+    modalCurrentIndex = activeCardIndex !== -1 ? activeCardIndex : 0;
+
+    // Actualizar y mostrar el modal global
+    updateModalContent();
+    document.getElementById('global-product-modal').classList.remove('hidden');
+}
+
+window.changeModalImage = function(direction) {
+    if (modalImages.length <= 1) return;
+    
+    modalCurrentIndex = (modalCurrentIndex + direction + modalImages.length) % modalImages.length;
+    updateModalContent();
+}
+
+window.closeProductModal = function() {
+    document.getElementById('global-product-modal').classList.add('hidden');
+}
+
+function updateModalContent() {
+    const modalImg = document.getElementById('modal-main-img');
+    const currentData = modalImages[modalCurrentIndex];
+    
+    if (modalImg && currentData) {
+        modalImg.src = currentData.src;
+        modalImg.alt = currentData.alt;
+    }
+    
+    // Ocultar flechas en el modal si la manguera tiene una sola foto
+    const prevBtn = document.getElementById('modal-prev-btn');
+    const nextBtn = document.getElementById('modal-next-btn');
+    if (prevBtn && nextBtn) {
+        if (modalImages.length <= 1) {
+            prevBtn.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+        } else {
+            prevBtn.classList.remove('hidden');
+            nextBtn.classList.remove('hidden');
+        }
+    }
 }

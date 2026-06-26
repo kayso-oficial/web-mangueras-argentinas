@@ -4,9 +4,9 @@
   --font-sans: 'Roboto', sans-serif;
 
   /* COLORES EXTRAÍDOS DE LA GRÁFICA REAL */
-  --color-brand-blue: #0D0F16;    /* Azul noche premium para fondos oscuros */
-  --color-brand-yellow: #BC9F1D;  /* Amarillo maquinaria (retroexcavadora) */
-  --color-brand-green: #03480B;   /* Verde vibrante de la publicidad */
+  --color-brand-blue: #1c2a58;    /* Azul noche premium para fondos oscuros */
+  --color-brand-yellow: #E6C321;  /* Amarillo maquinaria (retroexcavadora) */
+  --color-brand-green: #187A40;   /* Verde vibrante de la publicidad */
   --color-brand-grey: #475569;
 
   /* Mapeo inteligente para que Tailwind use tu marca */

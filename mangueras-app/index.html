@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Mangueras Industriales Argentina | Fabricación y Venta B2B</title>
@@ -97,21 +97,16 @@
         </div>
     </header>
 
-   <section class="bg-slate-900 relative border-b border-slate-800 overflow-hidden pt-12 pb-24 md:pt-16 md:pb-32 min-h-[90vh] lg:min-h-screen flex items-center">
+   <section class="bg-black relative border-b border-black overflow-hidden pt-12 pb-24 md:pt-16 md:pb-32 min-h-[90vh] lg:min-h-screen flex items-center">
         
-        <!-- SLIDER IMÁGENES -->
-        <!-- Imagen 1 (Inicia visible) -->
         <div class="hero-slide absolute inset-0 bg-[url('/img/mangueras-industriales-argentinas-portada.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-90 md:opacity-100"></div>
         
-        <!-- Imagen 2 (Inicia oculta con opacity-0) -->
         <div class="hero-slide absolute inset-0 bg-[url('/img/mangueras-industriales-argentinas-portada-2.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-0"></div>
-         <!-- Imagen 3 (Inicia oculta con opacity-0) -->
+         
         <div class="hero-slide absolute inset-0 bg-[url('/img/mangueras-industriales-argentinas-portada-3.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-0"></div>
-        <!-- CAPAS DE SUPERPOSICIÓN (Se mantienen estáticas por encima de las fotos) -->
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/70 to-transparent"></div>
-        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
         
-        <!-- CONTENIDO DE TEXTO -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+        
         <div class="w-full max-w-7xl mx-auto px-4 relative z-10 flex flex-col items-start text-left">
                         
             <h1 class="reveal delay-100 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold italic text-white mb-6 md:mb-8 leading-[0.9] tracking-tighter uppercase max-w-6xl break-words">
@@ -119,7 +114,7 @@
             </h1>
                 
             <p class="reveal delay-200 text-base md:text-2xl text-white mb-8 md:mb-12 max-w-3xl font-extralight tracking-wide leading-relaxed">
-                Fabricación a medida para hidráulica, alimenticia, minería, petrolera, construcción y agro. Garantizamos máxima durabilidad con marcas líderes como Gates y Dunlop.
+                Fabricación a medida para hidráulica, alimenticia, minería, petrolera, construcción y agro. Garantizamos máxima durabilidad con marcas líderes como Gates, Dunlop y Plastimet.
             </p>
                 
             <div class="reveal delay-300 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
@@ -128,7 +123,6 @@
             </div>
         </div>
 
-        <!-- SCRIPT PARA EL SLIDER AUTOMÁTICO -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const slides = document.querySelectorAll('.hero-slide');
@@ -150,11 +144,11 @@
         </script>
     </section>
 
-    <section id="productos" class="py-16 md:py-24 bg-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-4">
+ <section id="productos" class="py-16 md:py-24 bg-white overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4">
         <div class="reveal mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-2">Línea de Mangueras</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-2">Línea de Mangueras</h2>
                 <div class="w-16 h-1 bg-yellow-500 mb-4"></div>
                 <p class="text-sm font-medium text-slate-500 tracking-wide">Explore nuestro catálogo o filtre por categoría.</p>
             </div>
@@ -179,218 +173,227 @@
                 <i data-lucide="chevron-left" class="w-6 h-6"></i>
             </button>
 
-            <div class="product-track grid grid-cols-2 lg:flex lg:overflow-x-auto gap-3 md:gap-6 px-1 lg:px-4 -mx-1 lg:-mx-4 pt-4 pb-8 lg:after:content-[''] lg:after:w-4 lg:after:flex-shrink-0 snap-x snap-mandatory hide-scrollbar scroll-smooth">
+            <div class="product-track grid grid-cols-2 lg:flex lg:overflow-x-auto items-stretch lg:items-stretch gap-3 md:gap-6 px-1 lg:px-4 -mx-1 lg:-mx-4 pt-4 pb-8 lg:after:content-[''] lg:after:w-4 lg:after:flex-shrink-0 snap-x snap-mandatory hide-scrollbar scroll-smooth">
                 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="hidraulica r2at 2sn alta presion">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="hidraulica r2at 2sn alta presion">
                     <div class="p-4 md:p-6 border-b border-slate-100 relative">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Hidráulicas</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Hidráulicas</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">R2AT / 2SN</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="absolute top-2 right-2 flex gap-1 opacity-40">
-                            <span class="text-[6px] md:text-[8px] font-bold border border-slate-400 px-1">SAE</span>
-                            <span class="text-[6px] md:text-[8px] font-bold border border-slate-400 px-1">ISO</span>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-industrial-hiadraulica-gates.jpeg" alt="Manguera Hidráulica Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/manguera-industrial-hiadraulica-2.jpeg" alt="Manguera Hidráulica Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/manguera-hidraulica-3.jpeg" alt="Manguera Hidráulica Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
+                    </div>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Caucho NBR.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> 2 mallas acero.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Anti abrasión.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Rango: -40°C a +250°C</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho sintético, Termoplástico.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Alta y extrema presión.</li>
+                            </ul>
                         </div>
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN R2]</div>
-                    </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Caucho NBR.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> 2 mallas acero.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Anti abrasión.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Rango: -40°C a +100°C</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho sintético, Termoplástico.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Alta y extrema presión.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20hidr%C3%A1ulica." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20hidr%C3%A1ulica." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="petrolera succion hidrocarburos combustible">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="petrolera succion hidrocarburos combustible">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Petrolera</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Petrolera</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Succión y Descarga</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN PETROLERA]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-petrolera-1-gates.jpeg" alt="Manguera Petrolera Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/manguera-petrolera-2-gates.jpeg" alt="Manguera Petrolera Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/manguera-petrolera-3.jpeg" alt="Manguera Petrolera Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Nitrilo negro liso.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Tela y espiral.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Anti flama.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Presión: 150 PSI / 10 BAR</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Nitrilo (NBR), PVC reforzado.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Succión y descarga de fluidos.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Nitrilo negro liso.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Tela y espiral.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Anti flama.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Presión: 150 PSI / 10 BAR</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Nitrilo (NBR), PVC reforzado.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Succión y descarga de fluidos.</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20petrolera." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20petrolera." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="industrial conexiones acoples rapidos prensado">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="industrial conexiones acoples rapidos prensado">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-[15px] md:text-xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Industriales <br>en general</h3>
+                        <h3 class="text-[15px] md:text-xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Industriales en general</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Conexiones y Acoples</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN ACOPLES]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-industrial-1.jpeg" alt="Acoples Industriales Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/manguera-industrial-2.jpeg" alt="Acoples Industriales Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/manguera-industrial-3.jpeg" alt="Acoples Industriales Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero, Latón.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Roscas:</span> BSP, NPT, JIC.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Normativa:</span> SAE / DIN.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Mecanizado de precisión</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho, PVC, Poliuretano.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Agua, aire y multipropósito.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero, Latón.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Roscas:</span> BSP, NPT, JIC.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Normativa:</span> SAE / DIN.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Mecanizado de precisión</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho, PVC, Poliuretano.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Agua, aire y multipropósito.</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20industrial." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20industrial." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="alimenticia atoxica sanitaria">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="alimenticia atoxica sanitaria">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Alimenticia</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Alimenticia</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Atóxicas</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN BLANCA]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-industrial-alimenticia-gates.jpeg" alt="Manguera Alimenticia Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100">
+                        <img src="img/platimet-manguera-alimenticia.jpeg" alt="Manguera Alimenticia Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        <img src="img/manguera-industrial-alimenticia-3.jpeg" alt="Manguera Alimenticia Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Goma sanitaria.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Uso:</span> Lácteos, vinos.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Limpieza:</span> Apta SIP/CIP.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Certificación FDA</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho atóxico, PVC, Acero Inox.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Certificación: Apta FDA / Atóxica.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Goma sanitaria.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Uso:</span> Lácteos, vinos.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Limpieza:</span> Apta SIP/CIP.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Certificación FDA</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho atóxico, PVC, Acero Inox.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Certificación: Apta FDA / Atóxica.</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20alimenticia." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20alimenticia." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="mineria abrasion materiales lodos">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="mineria abrasion materiales lodos">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Minería</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Minería</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Alta Abrasión</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN MINERÍA]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-mineria-1.jpeg" alt="Manguera Minería Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100">
+                        <img src="img/manguera-mineria-2.jpeg" alt="Manguera Minería Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        <img src="img/manguera-mineria-3.jpeg" alt="Manguera Minería Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Caucho antiabrasivo.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Telas sintéticas.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Resistente al desgarro.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Uso: Transporte de lodos.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho antiabrasivo, PU.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Lodos y alta abrasión.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> Caucho antiabrasivo.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Telas sintéticas.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Resistente al desgarro.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Uso: Transporte de lodos.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Caucho antiabrasivo, PU.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Lodos y alta abrasión.</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20para%20miner%C3%ADa." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20para%20miner%C3%ADa." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="quimica acidos solventes corrosivos">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="quimica acidos solventes corrosivos">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Química</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Química</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Ácidos y Solventes</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN QUÍMICA]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/manguera-quimica-1.jpeg" alt="Manguera Química Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100">
+                        <img src="img/manguera-quimica-2.jpeg" alt="Manguera Química Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        <img src="img/manguera-quimica-3.jpeg" alt="Manguera Química Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> EPDM / UHMWPE.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Espiral de acero.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Resistente a químicos.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Rango: Corrosivos.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> EPDM, UHMWPE, Inox.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Industriales:</span> Hasta 8".</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Ácidos y solventes.</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tubo:</span> EPDM / UHMWPE.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Refuerzo:</span> Espiral de acero.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Cubierta:</span> Resistente a químicos.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Rango: Corrosivos.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> EPDM, UHMWPE, Inox.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Prensadas:</span> Desde 1/4" a 6".</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Aplicación: Ácidos y solventes.</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20qu%C3%ADmica." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493516252908?text=Hola,%20quiero%20consultar%20por%20una%20manguera%20qu%C3%ADmica." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -402,8 +405,19 @@
             </button>
         </div>
     </div>
-</section>
 
+    <div id="global-product-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-white/40 backdrop-blur-md transition-opacity" onclick="window.closeProductModal()">
+        <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center" onclick="event.stopPropagation();">
+            
+            <button class="absolute top-3 right-3 text-slate-800 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center text-2xl font-bold transition-colors cursor-pointer shadow-md z-30" onclick="window.closeProductModal()">&times;</button>
+            
+            <button id="modal-prev-btn" class="absolute left-4 bg-white/80 hover:bg-white text-slate-800 rounded-full w-10 h-10 flex items-center justify-center text-xl shadow-lg transition z-20 font-bold cursor-pointer" onclick="window.changeModalImage(-1)">&#10094;</button>
+            <button id="modal-next-btn" class="absolute right-4 bg-white/80 hover:bg-white text-slate-800 rounded-full w-10 h-10 flex items-center justify-center text-xl shadow-lg transition z-20 font-bold cursor-pointer" onclick="window.changeModalImage(1)">&#10095;</button>
+
+            <img id="modal-main-img" src="" alt="" class="max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm">
+        </div>
+    </div>
+</section>
 <section id="Accesorios" class="py-16 md:py-24 bg-white overflow-hidden relative border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4">
         
@@ -432,128 +446,140 @@
                 <i data-lucide="chevron-left" class="w-6 h-6"></i>
             </button>
 
-            <div class="product-track grid grid-cols-2 lg:flex lg:overflow-x-auto gap-3 md:gap-6 px-1 lg:px-4 -mx-1 lg:-mx-4 pt-4 pb-8 lg:after:content-[''] lg:after:w-4 lg:after:flex-shrink-0 snap-x snap-mandatory hide-scrollbar scroll-smooth">
+            <div class="product-track grid grid-cols-2 lg:flex lg:overflow-x-auto items-stretch gap-3 md:gap-6 px-1 lg:px-4 -mx-1 lg:-mx-4 pt-4 pb-8 lg:after:content-[''] lg:after:w-4 lg:after:flex-shrink-0 snap-x snap-mandatory hide-scrollbar scroll-smooth">
                 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="hidraulicos accesorios codos valvulas abrazaderas">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="hidraulicos accesorios codos valvulas abrazaderas">
                     <div class="p-4 md:p-6 border-b border-slate-100 relative">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Hidráulicos</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Hidráulicos</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Accesorios</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN HIDRÁULICOS]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/accesorio-hidraulico-1.jpeg" alt="Accesorio Hidráulico Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/accesorio-hidraulico-2.jpeg" alt="Accesorio Hidráulico Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/accesorio-hidraulico-3.jpeg" alt="Accesorio Hidráulico Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Codos, acoples, abrazaderas, válvulas.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero al carbono, Latón, Inox.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Roscas:</span> BSP, NPT, JIC, Métrica.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1/4" a 2".</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-grow">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Codos, acoples, abrazaderas, válvulas.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero al carbono, Latón, Inox.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Roscas:</span> BSP, NPT, JIC, Métrica.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1/4" a 2".</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20hidr%C3%A1ulicos." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20hidr%C3%A1ulicos." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="neumaticos accesorios acoples rapidos conexiones">
-                    <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Neumáticos</h3>
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="neumaticos accesorios acoples rapidos conexiones">
+                   <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Neumáticos</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Accesorios</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN NEUMÁTICOS]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/accesorio-neumatico-1.jpeg" alt="Accesorio Neumático Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/accesorio-neumatico-2.jpeg" alt="Accesorio Neumático Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/accesorio-neumatico-3.jpeg" alt="Accesorio Neumático Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Acoples rápidos, conectores, válvulas.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Polímero, Latón niquelado.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Aplicación:</span> Aire comprimido y automatización.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: 4mm a 16mm / 1/8" a 1/2".</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-1">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Acoples rápidos, conectores, válvulas.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Polímero, Latón niquelado.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Aplicación:</span> Aire comprimido y automatización.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: 4mm a 16mm / 1/8" a 1/2".</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20neum%C3%A1ticos." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20neum%C3%A1ticos." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="alimenticios accesorios abrazaderas storz sanitarios">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="alimenticios accesorios abrazaderas storz sanitarios">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Alimenticios</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Alimenticios</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Accesorios</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN ALIMENTICIOS]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/conector-alimenticia.jpeg" alt="Accesorio Alimenticio Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/union-danesa.jpeg" alt="Accesorio Alimenticio Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/conector-alimenticia-3.jpeg" alt="Accesorio Alimenticio Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Uniones Danesa, Clamp, válvulas.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero Inoxidable 304 / 316L.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Terminación:</span> Pulido sanitario atóxico.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1" hasta 4".</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-grow">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Uniones Danesa, Clamp, válvulas.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Acero Inoxidable 304 / 316L.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Terminación:</span> Pulido sanitario atóxico.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1" hasta 4".</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20alimenticios." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20alimenticios." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col h-full hover:shadow-xl transition-all duration-300" data-title="industriales accesorios camlock storz abrazaderas">
+                <div class="product-card w-full lg:min-w-[320px] lg:max-w-[320px] lg:flex-shrink-0 snap-center border border-slate-200 hover:border-slate-400 bg-white flex flex-col hover:shadow-xl transition-all duration-300" data-title="industriales accesorios camlock storz abrazaderas">
                     <div class="p-4 md:p-6 border-b border-slate-100">
-                    <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Industriales</h3>
+                        <h3 class="text-lg md:text-2xl font-bold text-slate-900 tracking-tighter uppercase leading-tight">Industriales</h3>
                         <p class="text-[9px] md:text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">Accesorios (Ej: Camlock)</p>
                     </div>
-                    <div class="h-28 md:h-48 bg-slate-50 flex items-center justify-center p-2 md:p-4 relative">
-                        <div class="text-slate-400 text-[10px] md:text-xs font-bold tracking-widest">[IMAGEN INDUSTRIALES]</div>
+                    
+                    <div class="card-image-slider h-28 md:h-48 w-full bg-slate-50 overflow-hidden relative cursor-pointer group/slider" onclick="window.openProductModal(this)">
+                        <img src="img/camlock-general.jpeg" alt="Accesorio Industrial Vista 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
+                        <img src="img/camlock-polipropileno.jpeg" alt="Accesorio Industrial Vista 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        <img src="img/camlock-tipo-c.jpeg" alt="Accesorio Industrial Vista 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
+                        
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10094;</button>
+                        <button onclick="event.stopPropagation(); window.changeCardImage(this, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-slate-800 rounded-full w-7 h-7 flex items-center justify-center text-sm shadow-md transition opacity-0 group-hover/slider:opacity-100 z-10 font-bold">&#10095;</button>
                     </div>
-                    <div class="p-4 md:p-6 flex-grow flex flex-col">
-                    <div class="product-details hidden lg:block flex-grow">
-                        <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
-                            <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Acoples Camlock, Storz, abrazaderas.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Aluminio, Bronce, PP, Inox.</li>
-                            <li><span class="font-bold text-slate-900 block md:inline">Aplicación:</span> Fluidos generales, agua, químicos.</li>
-                            <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1/2" hasta 8".</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
-                        <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
-                    </button>
+
+                    <div class="p-4 md:p-6 flex-1 flex flex-col">
+                        <div class="product-details hidden lg:block flex-grow">
+                            <ul class="text-xs md:text-sm text-slate-600 space-y-2 md:space-y-3 mb-4 md:mb-6">
+                                <li><span class="font-bold text-slate-900 block md:inline">Tipos:</span> Acoples Camlock, Storz, abrazaderas.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Materiales:</span> Aluminio, Bronce, PP, Inox.</li>
+                                <li><span class="font-bold text-slate-900 block md:inline">Aplicación:</span> Fluidos generales, agua, químicos.</li>
+                                <li class="pt-2 text-[9px] md:text-xs border-t border-slate-100 mt-2">Medidas: Desde 1/2" hasta 8".</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="toggle-details-btn lg:hidden text-[10px] font-bold text-slate-600 border border-slate-200 bg-slate-50 hover:bg-slate-100 uppercase tracking-widest mb-3 py-2 w-full flex items-center justify-center gap-1 transition-colors rounded-sm cursor-pointer">
+                            <span class="btn-text">Ver más</span> <i data-lucide="chevron-down" class="w-3 h-3 transition-transform duration-300 icon-chevron"></i>
+                        </button>
                         <div class="flex flex-col lg:flex-row mt-auto text-white rounded-sm overflow-hidden gap-[1px] bg-green-700">
-                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20industriales." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">
-                                consultar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-3 h-3" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
-                            </a>
-                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">
-                                Correo <i data-lucide="mail" class="w-3 h-3"></i>
-                            </a>
+                            <a href="https://wa.me/5493512176324?text=Hola,%20quiero%20consultar%20por%20accesorios%20industriales." target="_blank" rel="noopener noreferrer" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-green-600 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-green-700 transition">consultar</a>
+                            <a href="#contacto" class="flex-1 flex justify-center items-center gap-1.5 py-2.5 bg-slate-900 text-[9px] md:text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 transition">Correo <i data-lucide="mail" class="w-3 h-3"></i></a>
                         </div>
                     </div>
                 </div>
