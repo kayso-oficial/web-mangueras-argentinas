@@ -69,23 +69,26 @@ body {
   border: 1px solid var(--color-brand-yellow);
   animation: neon-glow 3s infinite ease-in-out;
 }
-/* Slider Horizontal Automático (5 imágenes) */
+/* Slider Horizontal Automático (3 imágenes) */
 @keyframes slide-horizontal {
-    0%, 15% { transform: translateX(0%); }
-    20%, 35% { transform: translateX(-20%); }
-    40%, 55% { transform: translateX(-40%); }
-    60%, 75% { transform: translateX(-60%); }
-    80%, 95% { transform: translateX(-80%); }
+    /* Muestra la Foto 1 */
+    0%, 25% { transform: translateX(0%); }
+    /* Muestra la Foto 2 */
+    33.33%, 58.33% { transform: translateX(-33.3333%); }
+    /* Muestra la Foto 3 */
+    66.66%, 91.66% { transform: translateX(-66.6666%); }
+    /* Vuelve suavemente a la Foto 1 */
     100% { transform: translateX(0%); }
 }
 
 .slider-track {
     display: flex;
-    width: 500%; /* 5 fotos = 500% del contenedor */
-    animation: slide-horizontal 20s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    width: 300%; /* 3 fotos = 300% del ancho del contenedor padre */
+    /* 12s total = aprox 4 segundos de atención por cada foto */
+    animation: slide-horizontal 12s infinite cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .slider-item {
-    width: 20%; /* Cada foto ocupa el 100% de la vista */
+    width: 33.3333%; /* 100% dividido 3 fotos. Así cada una ocupa el ancho exacto visible */
     flex-shrink: 0;
 }

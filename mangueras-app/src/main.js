@@ -25,17 +25,28 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 // 3. Filtro de Categorías
 window.filterProductsInSection = function(section, category) {
+    const track = section.querySelector('.product-track');
     const cards = section.querySelectorAll('.product-card');
+    
     cards.forEach(card => {
-        const title = card.getAttribute('data-title').toLowerCase();
-        const matchesCategory = category === "" || title.includes(category.toLowerCase());
+        // Le agregamos un chequeo de seguridad por si alguna tarjeta no llega a tener el data-title
+        const title = card.getAttribute('data-title') || ""; 
+        const matchesCategory = category === "" || title.toLowerCase().includes(category.toLowerCase());
         
         if (matchesCategory) {
-            card.style.display = 'flex';
+            // CLAVE: Se deja vacío para que Tailwind retome el control (flex flex-col)
+            card.style.display = ''; 
         } else {
             card.style.display = 'none';
         }
     });
+
+    // Pequeño retraso para que el DOM de mobile se actualice antes de resetear el scroll
+    if (track) {
+        setTimeout(() => {
+            track.scrollLeft = 0;
+        }, 50);
+    }
 }
 
 // 4. LÓGICA DE VER MÁS / VER MENOS EN TARJETAS (MOBILE)
@@ -138,26 +149,25 @@ let modalImages = [];
 let modalCurrentIndex = 0;
 
 window.openProductModal = function(sliderElement) {
-    const imgs = sliderElement.querySelectorAll('.slide-img');
-    if (imgs.length === 0) return;
+    const slides = sliderElement.querySelectorAll('.slide-img');
+    if (slides.length === 0) return;
 
-    // Guardar las rutas y textos de todas las imágenes de esta tarjeta
-    modalImages = Array.from(imgs).map(img => ({ src: img.src, alt: img.alt }));
+    // Guardar las rutas: busca el <img> real, ya sea el mismo elemento o si está adentro de un <div>
+    modalImages = Array.from(slides).map(slide => {
+        const img = slide.tagName.toLowerCase() === 'img' ? slide : slide.querySelector('img');
+        return { 
+            src: img ? img.src : '', 
+            alt: img ? img.alt : '' 
+        };
+    });
     
     // Detectar cuál es la imagen que se está viendo actualmente en la tarjeta
-    const activeCardIndex = Array.from(imgs).findIndex(img => img.classList.contains('opacity-100'));
+    const activeCardIndex = Array.from(slides).findIndex(slide => slide.classList.contains('opacity-100'));
     modalCurrentIndex = activeCardIndex !== -1 ? activeCardIndex : 0;
 
     // Actualizar y mostrar el modal global
     updateModalContent();
     document.getElementById('global-product-modal').classList.remove('hidden');
-}
-
-window.changeModalImage = function(direction) {
-    if (modalImages.length <= 1) return;
-    
-    modalCurrentIndex = (modalCurrentIndex + direction + modalImages.length) % modalImages.length;
-    updateModalContent();
 }
 
 window.closeProductModal = function() {
